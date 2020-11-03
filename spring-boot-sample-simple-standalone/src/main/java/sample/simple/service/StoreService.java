@@ -29,8 +29,6 @@ public class StoreService implements IStore, IFastLane, IJustHaveALook, ILane {
 	public StoreService(IBank bank, IProvider provider) {
 		this.bank = bank;
 		this.provider = provider;
-		System.out.println("numéro de compte store : " + storeAccountNumber);
-
 	}
 
 	@Override
@@ -66,7 +64,7 @@ public class StoreService implements IStore, IFastLane, IJustHaveALook, ILane {
 				this.articleQuantity.replace(article, newQuantity);
 			}
 			this.articleOrdered = new HashMap<Integer, Integer>();
-			System.out.println("Transfert effecté, panier réinitialisé");
+			System.out.println("Transfert effectué, panier réinitialisé");
 			return true;
 		} else {
 			System.out.println("Transfert refusé, panier réinitialisé");

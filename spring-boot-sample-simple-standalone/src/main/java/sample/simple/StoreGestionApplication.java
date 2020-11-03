@@ -14,7 +14,8 @@ public class StoreGestionApplication implements CommandLineRunner {
 		private ClientService clientService;
 		
 		public void run(String... args) {
-			clientService.run();
+			System.out.println(this.clientService.getAccNum());
+			//this.clientService.run();
 		}
 
 		public static void main(String[] args) throws Exception {

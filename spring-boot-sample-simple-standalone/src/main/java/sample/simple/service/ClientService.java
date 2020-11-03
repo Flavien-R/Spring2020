@@ -42,4 +42,8 @@ public class ClientService implements IRun, IClient {
 		
 	}
 	
+	public int getAccNum() {
+		return this.accountNumber;
+	}
+	
 }
